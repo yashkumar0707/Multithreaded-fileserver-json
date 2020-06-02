@@ -137,7 +137,7 @@ void *process(void *ptr)
 				{
 					//printf("ASDa");
 					//printf("\nno files at requested path");
-					json_object *jstring2 = json_object_new_string("false");
+					json_object *jstring2 = json_object_new_string("true");
 					json_object *jarray = json_object_new_string("No files found at requested path");
 					json_object_object_add(jobj, "error", jstring2);
 					json_object_object_add(jobj, "result", jarray);
